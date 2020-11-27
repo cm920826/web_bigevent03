@@ -17,7 +17,7 @@ $.ajaxPrefilter(function (options) {
     options.complete = function (res) {
         // console.log(options);
         // 输出的是{status: 1, message: "身份认证失败！"}  是一个对象
-        console.log(res.responseJSON);   
+        // console.log(res.responseJSON);   
         var obj = res.responseJSON
         if (obj.status == 1 && obj.message == '身份认证失败！') {
             // 清空本地存储的token

@@ -17,11 +17,6 @@ $(function () {
         });
     })
 
-
-
-
-
-
 })
 
 // 获取用户信息
@@ -47,7 +42,7 @@ function getUserInfo() {
 // 渲染用户头像及用户名
 function renderAvatar(user) {
     // 渲染名称
-    var name = user.nick || user.username
+    var name = user.nickname || user.username
     $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
     // 渲染头像
     if (user.user_pic !== null) {
